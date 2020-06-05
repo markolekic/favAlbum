@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Album List</title>
+    <link rel="icon" href="gitara.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container mt-4">
+        <h1 class="display-4 text-center">
+            &#119070; Favorite<span class="text-danger"> Albums </span> &#119070;</h1>
+        <form id="album-form">
+            <div class="form-group">
+                <label for="band">Band</label>
+                <input type="text" id="band" class="form-control bg-light" autocomplete="off">
+            </div>
+            <div class="form-group">
+                <label for="album">Album</label>
+                <input type="text" id="album" class="form-control bg-light" autocomplete="off">
+            </div>
+            <input type="submit" value="Add Album" class="btn btn-secondary btn-block">
+        </form>
+        <table class="table table-striped mt-5">
+            <thead>
+                <tr>
+                    <th>Band</th>
+                    <th>Album</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="album-list"></tbody>
+        </table>
+    </div>
+</body>
+<script src="main.js"></script>
+
+</html>
