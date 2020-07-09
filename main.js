@@ -1,6 +1,6 @@
 // Album Class: Represents a Album - create Object constructor function
 class BandAlbum {
-    //Method which runs when instantiate the book
+    //Method which runs when instantiate the album
     constructor(bandName, albumName) {
         //Object that owns the code - becomes object itself
         this.bandName = bandName;
